@@ -13,7 +13,7 @@ const TweetBox = () => {
         <input
           className='tweetBox__imageInput'
           type='text'
-          placeholder='Image Url'
+          placeholder='Optional: Image Url'
         />
         <Button className='tweetBox__tweeButton'>Tweet</Button>
       </form>

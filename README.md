@@ -10,4 +10,4 @@ Stack: React, Material UI, CSS, Firebase DataBase and Hosting.
 - Install MUI Core and MUI Icons (To style MUI Components !important should be included)
 - Create firebase.js file to include firebase configuration (after installing firebase cli for deploying)
 - Create a firebase DB in Firestore DB option
-
+- Create DB Collections needed in Firebase Console.

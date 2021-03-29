@@ -11,3 +11,7 @@ Stack: React, Material UI, CSS, Firebase DataBase and Hosting.
 - Create firebase.js file to include firebase configuration (after installing firebase cli for deploying)
 - Create a firebase DB in Firestore DB option
 - Create DB Collections needed in Firebase Console.
+
+## To deploy Run:
+
+- >> yarn build

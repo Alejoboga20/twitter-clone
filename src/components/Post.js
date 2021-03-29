@@ -11,26 +11,24 @@ const Post = ({ avatar, displayName, username, verified, text, image }) => {
   return (
     <div className='post'>
       <div className='post__avatar'>
-        <Avatar src='https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png' />
+        <Avatar src={avatar} />
       </div>
       <div className='post__body'>
         <div className='post__header'>
           <div className='post__headerText'>
             <h3>
-              Header 3
+              {displayName}{' '}
               <span className='post__headerSpecial'>
-                <VerifiedUserIcon className='post__badge' /> @alejoboga
+                {verified && <VerifiedUserIcon className='post__badge' />} @
+                {username}
               </span>
             </h3>
           </div>
           <div className='post__headerDescription'>
-            <p>Twitter clone with react</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src='https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif'
-          alt=''
-        />
+        <img src={image} alt='' />
         <div className='post__footer'>
           <ChatBubbleOutlineIcon fontSize='small' />
           <RepeatIcon fontSize='small' />

@@ -8,3 +8,6 @@ Stack: React, Material UI, CSS, Firebase DataBase and Hosting.
 
 - Setup Firebase Project: [URL](https://firebase.google.com/)
 - Install MUI Core and MUI Icons (To style MUI Components !important should be included)
+- Create firebase.js file to include firebase configuration (after installing firebase cli for deploying)
+- Create a firebase DB in Firestore DB option
+

@@ -10,7 +10,14 @@ const Feed = () => {
         <h2>Home</h2>
       </div>
       <TweetBox />
-      <Post />
+      <Post
+        displayName='Alejo Boga'
+        username='aboga'
+        verified={true}
+        text='This is working'
+        avatar='https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png'
+        image='https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif'
+      />
     </div>
   );
 };

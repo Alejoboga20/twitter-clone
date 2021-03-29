@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import TweetBox from './TweetBox';
 import Post from './Post';
 import db from '../firebase';
+import FlipMove from 'react-flip-move';
 import './Feed.css';
 
 const Feed = () => {
@@ -19,16 +20,21 @@ const Feed = () => {
         <h2>Home</h2>
       </div>
       <TweetBox />
-      {posts.map(({ displayName, username, verified, text, avatar, image }) => (
-        <Post
-          displayName={displayName}
-          username={username}
-          verified={verified}
-          text={text}
-          avatar={avatar}
-          image={image}
-        />
-      ))}
+      <FlipMove>
+        {posts.map(
+          ({ displayName, username, verified, text, avatar, image }) => (
+            <Post
+              key={text}
+              displayName={displayName}
+              username={username}
+              verified={verified}
+              text={text}
+              avatar={avatar}
+              image={image}
+            />
+          )
+        )}
+      </FlipMove>
     </div>
   );
 };

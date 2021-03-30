@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Avatar, Button } from '@material-ui/core';
 import db from '../firebase';
-import './TweetBox.css';
+import '../styles/TweetBox.css';
 
 const TweetBox = () => {
   const [tweetMessage, setTweetMessage] = useState('');
@@ -24,7 +24,7 @@ const TweetBox = () => {
     <div className='tweetBox'>
       <form>
         <div className='tweetBox__input'>
-          <Avatar src='https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png' />
+          <Avatar src='https://miro.medium.com/max/554/1*Ld1KM2WSfJ9YQ4oeRf7q4Q.jpeg' />
           <input
             type='text'
             placeholder="What's happening?"

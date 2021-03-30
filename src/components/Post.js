@@ -5,7 +5,7 @@ import RepeatIcon from '@material-ui/icons/Repeat';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import PublishIcon from '@material-ui/icons/Publish';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
-import './Post.css';
+import '../styles/Post.css';
 
 const Post = forwardRef(
   ({ avatar, displayName, username, verified, text, image }, ref) => {

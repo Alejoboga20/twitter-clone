@@ -5,7 +5,7 @@ import {
   TwitterTimelineEmbed,
   TwitterTweetEmbed
 } from 'react-twitter-embed';
-import './Widgets.css';
+import '../styles/Widgets.css';
 
 const Widgets = () => {
   return (
